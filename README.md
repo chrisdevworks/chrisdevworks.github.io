@@ -14,8 +14,4 @@ Note:
 11. Wait for a bit 10-15min
 12. Then open the link "omnyojii.github.io" in your browser
 
-<<<<<<< HEAD
 guide here: https://medium.com/tunapanda-institute/8-steps-to-publish-your-portfolio-on-github-9d6e6e3d2e84
-=======
-guide here: https://medium.com/tunapanda-institute/8-steps-to-publish-your-portfolio-on-github-9d6e6e3d2e84
->>>>>>> d4c3dcc8090a3cc79ae0e9baa9a640156a1bf309
