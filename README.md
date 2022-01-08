@@ -13,3 +13,5 @@ Note:
 10. Then click Push Origin
 11. Wait for a bit 10-15min
 12. Then open the link "omnyojii.github.io" in your browser
+
+guide here: https://medium.com/tunapanda-institute/8-steps-to-publish-your-portfolio-on-github-9d6e6e3d2e84
