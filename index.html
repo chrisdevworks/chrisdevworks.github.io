@@ -5,13 +5,14 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en-gb" class="no-js">
 <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>Neu Profile - Single page website</title>
+    <title>ChrisDevWorks</title>
     <meta name="description" content="">
     <meta name="author" content="WebThemez">
     <!--[if lt IE 9]>
@@ -28,7 +29,20 @@
     <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Font Awesome -->
-    <link href="font/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="font/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/2d84fa80d6.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,23 +50,26 @@
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#main-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand scroll-top logo"><b>Neu Profile</b></a>
+                    <div id="logo-body">
+                        <a href="#" class="navbar-brand scroll-top logo"><b>ChrisDevWorks</b></a>
+                    </div>
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <li><a href="#skills" class="scroll-link">Skills</a></li>
-                        <li><a href="#experience" class="scroll-link">Experience</a></li>
-                        <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-                        <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+                        <li class="active"><a href="#section-home" class="scroll-link">Home</a></li>
+                        <li><a href="#introText" class="scroll-link">About</a></li>
+                        <li><a href="#section-services" class="scroll-link">Services</a></li>
+                        <li><a href="#section-education" class="scroll-link">Education</a></li>
+                        <li><a href="#section-projects" class="scroll-link">Projects</a></li>
+                        <li><a href="#section-contact" class="scroll-link">Contact</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -63,32 +80,32 @@
     </header>
     <!--/.header-->
     <div id="#top"></div>
-    <section id="home">
+    <section id="section-home">
         <div class="banner-container">
-            <img src="images/banner-bg.jpg" alt="banner" />
+            <img src="images/banner-bg2.jpg" alt="banner" />
             <div class="container banner-content">
                 <div id="da-slider" class="da-slider">
                     <div class="da-slide">
-                        <h2>Webdesigner</h2>
-                        <p>Amazing free responsive website for free, enjoy!!!</p>
+                        <H2>Hi, I'm Christopher Christian Cosingan </H2>
+                        <p>A freelance developer from the City of Waterfalls</p>
                         <div class="da-img"></div>
                     </div>
                     <div class="da-slide">
-                        <h2>UX/UI Developer</h2>
+                        <h2>Front-end Developer</h2>
                         <p>I develop website using Bootstrap front-end framework..</p>
                         <div class="da-img"></div>
                     </div>
                     <div class="da-slide">
-                        <h2>HTML5/CSS3</h2>
-                        <p>HTML5 is a markup language used for structuring and presenting Web.</p>
+                        <h2>Back-end Developer</h2>
+                        <p>I can also develop the back-end using PHP/Laravel and MySQL/PostgreSQL</p>
                         <div class="da-img"></div>
                     </div>
                     <div class="da-slide">
-                        <h2>JavaScript/jQuery</h2>
-                        <p>jQuery: Write Less, Do More...</p>
+                        <h2>Other technologies</h2>
+                        <p>Including Internet of Things and Machine Vision</p>
                         <div class="da-img"></div>
                     </div>
-				<!--  <nav class="da-arrows">
+                    <!--  <nav class="da-arrows">
                         <span class="da-arrows-prev"></span>
                         <span class="da-arrows-next"></span>
                     </nav> -->
@@ -98,43 +115,54 @@
     </section>
     <section id="introText">
         <div class="container">
-            <div class="text-center">
-            <h1>I create beautiful responsive websites, Yes I am a UX geek</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat. Nulla vehicula condimentum purus, quis imperdiet nisl ultricies eleifend. Nulla quis rhoncus risus. Ut vel vehicula urna.</p>
+            <div class="heading text-center about-content">
+                <!-- Heading -->
+                <img class="profile-user-img img-fluid img-circle" src="images/profile.jpg" alt="User profile picture">
+                <h2>I am Christopher Christian, a Full Stack developer</h2>
+                <p>From the city of Waterfalls, Iligan City</p>
             </div>
         </div>
-
     </section>
+    <!-- <section class="hero">
+        <img src="images/mariacristinafalls.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero Image">
+        <div class="hero-text">
+            <h1>I am Christopher Christian, a Full Stack developer</h1>
+            <p>From the city of Waterfalls, Iligan City</p>
+        </div>
+    </section> -->
     <!--About-->
-    <section id="aboutUs" class="secPad">
+    <section id="section-about" class="secPad">
         <div class="container">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>I am Sam, a UI Designer & developer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="text-center">
+                <h1>I create beautiful responsive website with documentations.</h1>
+                <p> I also Machine Vision projects using python and the Internet of Things (IoT) development using
+                    Arduino for Home Security and Automation and Robotics.</p>
             </div>
             <div class="row">
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
-                   <div class="txtHead"> <i class="fa fa-desktop"></i>
-                    <h3>Responsive <span class="id-color">Design</span></h3></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                    <div class="txtHead"> <i class="fa fa-desktop"></i>
+                        <h3>Front-end <span class="id-color">Dev</span></h3>
+                    </div>
+                    <p>With HTML, CSS, Javascript and Bootstrap</p>
                 </div>
                 <!-- end: -->
 
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
-                    <div class="txtHead"><i class="fa fa-css3"></i>
-                    <h3>HTML5/CSS3 <span class="id-color">Dev</span></h3></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                    <div class="txtHead"><i class="fa fa-database"></i>
+                        <h3>Back-end <span class="id-color">Dev</span></h3>
+                    </div>
+                    <p>With PHP, Python MySQL, and PostgreSQL.</p>
                 </div>
                 <!-- end: -->
 
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
-                    <div class="txtHead"><i class="fa fa-lightbulb-o"></i>
-                    <h3>JavaScript <span class="id-color">jQuery</span></h3></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                    <div class="txtHead"><i class="fa fa-eye"></i>
+                        <h3>Machine Vision and Robotics <span class="id-color">Dev</span></h3>
+                    </div>
+                    <p>With C++ and Python.</p>
                 </div>
                 <!-- end: -->
             </div>
@@ -144,32 +172,33 @@
     <section id="quote" class="bg-parlex">
         <div class="parlex-back">
             <div class="container secPad text-center">
-				<h2>If I asked people what they wanted, they would have said ‘Faster Horses’.</h2><h3>-Henry Ford</h3>
+                <h2>Good, Better, Best. Never let it rest. ‘Til your good is better and your better is best.</h2>
+                <h3>-St. Jerome</h3>
             </div>
             <!--/.container-->
         </div>
     </section>
-    
+
     <!--Skills-->
-    <section id="skills" class="secPad white">
-    	<div class="container">
-        <div class="heading text-center">
+    <section id="section-services" class="secPad white">
+        <div class="container">
+            <div class="heading text-center">
                 <!-- Heading -->
                 <h2>My Skills</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
-        	<div class="row">
+            <div class="row">
                 <div class="col-sm-6">
-                    <h2>Programming <strong>Skills</strong></h2>
+                    <h2>Web Programming <strong>Skills</strong></h2>
                     <p class="mrgBtm20">
-                        It takes knowledge, smart work, and dedication to make great ideas come to life. I have been helping make great ideas happen for the past 7 years and am always ready for new challenges.
-                
+                        It takes knowledge, smart work, and dedication to make great ideas come to life. I have been
+                        helping make great ideas happen for the past 7 years and am always ready for new challenges.
                     </p>
                     <div class="row">
                         <div class="col-md-2 skilltitle">HTML5</div>
                         <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;">
                                     <span class="sr-only">90% Complete</span>
                                 </div>
                             </div>
@@ -179,7 +208,8 @@
                         <div class="col-md-2 skilltitle">CSS/CC3</div>
                         <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;">
                                     <span class="sr-only">90% Complete</span>
                                 </div>
                             </div>
@@ -189,7 +219,8 @@
                         <div class="col-md-2 skilltitle">JavaScript</div>
                         <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 80%;">
                                     <span class="sr-only">80% Complete</span>
                                 </div>
                             </div>
@@ -199,342 +230,340 @@
                         <div class="col-md-2 skilltitle">jQuery/Ajax</div>
                         <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>      
-                </div>
-                <div class="col-sm-6">
-                    <h2>Designing <strong>Skills</strong></h2>
-                    <p class="mrgBtm20">
-                        Problem solving is not always about sitting in a board room talking about the way things should be done. I have a strong background in UI design which allows me to think on my feet and act upon it.
-                
-                    </p>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Photoshop</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;">
                                     <span class="sr-only">90% Complete</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 skilltitle">Illustrator</div>
+                        <div class="col-md-2 skilltitle">PHP</div>
                         <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;">
+                                    <span class="sr-only">90% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">MySQL</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;">
+                                    <span class="sr-only">90% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">PostgreSQL</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 50%;">
+                                    <span class="sr-only">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">Python</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 70%;">
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">C++</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 70%;">
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Other <strong>Skills</strong></h2>
+                    <p class="mrgBtm20">
+                        Problem solving is not always about sitting in a board room talking about the way things
+                        should be done. I have a strong background in UI design which allows me to think on my feet
+                        and act upon it.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">Photoshop</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 50%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">Arduino</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 80%;">
                                     <span class="sr-only">80% Complete</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 skilltitle">Indesign</div>
+                        <div class="col-md-2 skilltitle">Computer Hardware Servicing</div>
                         <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                                    <span class="sr-only">75% Complete</span>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 85%;">
+                                    <span class="sr-only">85% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">Network Administration</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 70%;">
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 skilltitle">Communication Skills</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 70%;">
+                                    <span class="sr-only">70% Complete</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </section>
-    
+
     <!--Experience-->
-    <section id="experience" class="secPad">
-    	<div class="container">     
-           <div class="heading text-center">
+    <section id="section-education" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
                 <!-- Heading -->
                 <h2>Professional Experience</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
-        <div id="timeline"><div class="row timeline-movement timeline-movement-top">
-        <div class="timeline-badge timeline-future-movement">
-            <a href="#">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
-        </div>
-        <div class="timeline-badge timeline-filter-movement">
-            <a href="#">
-                <span class="glyphicon glyphicon-time"></span>
-            </a>
-        </div>
-    
-    </div>
-    <div class="row timeline-movement">
-    
-        <div class="timeline-badge">
-            <span class="timeline-balloon-date-day">Feb</span>
-            <span class="timeline-balloon-date-month">2014</span>
-        </div>
-    
-    
-        <div class="col-sm-6  timeline-item">
-            <div class="row">
-                <div class="col-sm-11">
-                    <div class="timeline-panel credits">
-                        <ul class="timeline-panel-ul">
-                            <li><span class="importo">Mussum ipsum cacilds</span></li>
-                            <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                            <li><p><small class="text-muted"> 18/02/2014 - Present</small></p> </li>
-                        </ul>
+            <div id="timeline">
+                <div class="row timeline-movement timeline-movement-top">
+                    <div class="timeline-badge timeline-future-movement">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </a>
                     </div>
-    
+                    <div class="timeline-badge timeline-filter-movement">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </a>
+                    </div>
+
                 </div>
+                <div class="row timeline-movement">
+                    <div class="timeline-badge">
+                        <span class="timeline-balloon-date-day">Jan</span>
+                        <span class="timeline-balloon-date-month">2018</span>
+                    </div>
+                    <div class="col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="timeline-panel credits">
+                                    <ul class="timeline-panel-ul">
+                                        <li><span class="importo">Administrative Aide IV</span></li>
+                                        <li><span class="causale">Performed a wide variety of clerical tasks such as
+                                                word processing, printing, collating documents & scheduling
+                                                appointments.
+                                            </span> </li>
+                                        <li>
+                                            <p><small class="text-muted"> 1/06/2017 - 31/01/2018</small></p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row timeline-movement">
+                    <div class="timeline-badge">
+                        <span class="timeline-balloon-date-day">May</span>
+                        <span class="timeline-balloon-date-month">2022</span>
+                    </div>
+                    <div class="col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="timeline-panel credits">
+                                    <ul class="timeline-panel-ul">
+                                        <li><span class="importo">Web Developer Intern</span></li>
+                                        <li><span class="causale">Developed a responsive web app for the Guidance Office
+                                                e that allows the staffs to manage exams. </span> </li>
+                                        <li>
+                                            <p><small class="text-muted"> 10/08/2021 - 10/05/2022</small></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-6 col-sm-6  timeline-item">
+                        <div class="row">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <div class="timeline-panel debits">
+                                    <ul class="timeline-panel-ul">
+                                        <li><span class="importo">Graduated</span></li>
+                                        <li><span class="causale">Bachelor of Science in Computer Science</span> </li>
+                                        <li>
+                                            <p><small class="text-muted"> 22/05/2022</small></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    
-        <div class="col-sm-6  timeline-item">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-11">
-                    <div class="timeline-panel debits">
-                        <ul class="timeline-panel-ul">
-                            <li><span class="importo">Mussum ipsum cacilds</span></li>
-                            <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                            <li><p><small class="text-muted"> 18/02/2014 - Present</small></p> </li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--due -->
-    
-    <div class="row timeline-movement">
-    
-    
-        <div class="timeline-badge">
-            <span class="timeline-balloon-date-day">Mar</span>
-            <span class="timeline-balloon-date-month">2013</span>
-        </div>
-    
-        <div class="col-sm-offset-6 col-sm-6  timeline-item">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-11">
-                    <div class="timeline-panel debits">
-                        <ul class="timeline-panel-ul">
-                            <li><span class="importo">Mussum ipsum cacilds</span></li>
-                            <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                            <li><p><small class="text-muted"> 10/03/2013 - 18/02/2014</small></p> </li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    
-        <div class="col-sm-6  timeline-item">
-            <div class="row">
-                <div class="col-sm-11">
-                    <div class="timeline-panel credits">
-                        <ul class="timeline-panel-ul">
-                            <li><span class="importo">Mussum ipsum cacilds</span></li>
-                            <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                            <li><p><small class="text-muted"> 10/03/2013 - 18/02/2014</small></p> </li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    
-    
-    </div>
-    <div class="row timeline-movement">
-    
-    
-        <div class="timeline-badge">
-            <span class="timeline-balloon-date-day">Jan</span>
-            <span class="timeline-balloon-date-month">2010</span>
-        </div>
-    
-        <div class="col-sm-offset-6 col-sm-6  timeline-item">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-11">
-                    <div class="timeline-panel debits">
-                        <ul class="timeline-panel-ul">
-                            <li><span class="importo">Mussum ipsum cacilds</span></li>
-                            <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                            <li><p><small class="text-muted"> 11/01/2010 - 10/03/2013</small></p> </li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    
-        <div class="col-sm-6  timeline-item">
-            <div class="row">
-                <div class="col-sm-11">
-                    <div class="timeline-panel credits">
-                        <ul class="timeline-panel-ul">
-                            <li><span class="importo">Mussum ipsum cacilds</span></li>
-                            <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                            <li><p><small class="text-muted"> 11/01/2010 - 10/03/2013</small></p> </li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    
-    
-    </div>
-    </div>
-    </div>
-    
+
     </section>
-    
-  
-   <!--Portfolio-->
-    <section id="portfolio" class="page-section section appear clearfix secPad">
+
+
+    <!--Portfolio-->
+    <section id="section-projects" class="page-section section appear clearfix secPad">
         <div class="container">
 
             <div class="heading text-center">
                 <!-- Heading -->
-                <h2>Portfolio</h2>
-                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+                <h2>Projects</h2>
+                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected
+                    humour.</p>
             </div>
 
             <div class="row">
                 <nav id="filter" class="col-md-12 text-center">
                     <ul>
                         <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesdev">Web Design and
+                                Development</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".macv">Machine Vision</a></li>
                     </ul>
                 </nav>
                 <div class="col-md-12">
                     <div class="row">
                         <div class="portfolio-items isotopeWrapper clearfix" id="3">
 
-                            <article class="col-sm-4 isotopeItem webdesign">
+                            <article class="col-sm-4 isotopeItem webdesdev">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img1.jpg" alt="" />
+                                    <img src="images/smcdms/Screenshot_59.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img1.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/smcdms/Screenshot_59.png" class="fancybox">
+                                                <h5>Login Page</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem photography">
+                            <article class="col-sm-4 isotopeItem webdesdev">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img2.jpg" alt="" />
+                                    <img src="images/smcdms/Screenshot_58.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img2.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/smcdms/Screenshot_58.png" class="fancybox">
+                                                <h5>Document Info with Paper Trails</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem webdesdev">
+                                <div class="portfolio-item">
+                                    <img src="images/smcdms/Screenshot_57.png" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="images/smcdms/Screenshot_57.png" class="fancybox">
+                                                <h5>A list of documents a user have released</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
 
-                            <article class="col-sm-4 isotopeItem photography">
+                            <!-- ============================MACHINE VISION====================================== -->
+
+                            <article class="col-sm-4 isotopeItem macv">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img3.jpg" alt="" />
+                                    <img src="images/machinevision/cv-img1.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img3.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/machinevision/cv-img1.jpg" class="fancybox">
+                                                <h5>Sample Taken in Bus Terminal</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem print">
+                            <article class="col-sm-4 isotopeItem macv">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img4.jpg" alt="" />
+                                    <img src="images/machinevision/cv-img2.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img4.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/machinevision/cv-img2.jpg" class="fancybox">
+                                                <h5>Sample Taken in Bus Terminal</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem photography">
+                            <article class="col-sm-4 isotopeItem macv">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img5.jpg" alt="" />
+                                    <img src="images/machinevision/cv-img3.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img5.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/machinevision/cv-img3.png" class="fancybox">
+                                                <h5>Sample Taken in City Public Market</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem webdesign">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img6.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img6.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
 
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img7.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img7.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img8.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img8.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img9.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img9.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
                         </div>
 
                     </div>
@@ -546,52 +575,35 @@
         </div>
     </section>
 
-	<!--Contact -->
-    <section id="contactUs" class="page-section secPad">
+    <!--Contact -->
+    <section id="section-contact" class="page-section secPad">
         <div class="container">
 
             <div class="row">
                 <div class="heading text-center">
                     <!-- Heading -->
                     <h2>Let's Keep In Touch!</h2>
-                    <p>Thank you for visiting out my profile. If you would like to get into contact with me, please fill out the form below.</p>
+                    <p>Thank you for visiting out my profile. If you would like to get into contact with me, please
+                        fill out the form below.</p>
                 </div>
             </div>
 
             <div class="row mrgn30">
-
-                <form method="post" action="" id="contactfrm" role="form">
-
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="comments">Comments</label>
-                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-                        </div>
-                        <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-                        <div class="result"></div>
-                    </div>
-                </form>
-                <div class="col-sm-4">
+                <div class="text-center">
+                    <h4>Email:</h4>
+                    <address>
+                        ccosingan@gmail.com<br>
+                    </address>
                     <h4>Address:</h4>
                     <address>
-                        WebThemez Company<br>
-                        134 Stilla. Tae., 414515<br>
-                        Leorislon, SA 02434-34534 USA
+                        #161 Emilio Alcuizar Avenue, Bara-as, Brgy. Tubod<br>
+                        Iligan City, Lanao Del Norte<br>
+                        Philippines
                         <br>
                     </address>
                     <h4>Phone:</h4>
                     <address>
-                        12345-49589-2<br>
+                        (+63) 0955-1827-370<br>
                     </address>
                 </div>
             </div>
@@ -601,11 +613,10 @@
     <footer>
         <div class="container">
             <div class="social text-center">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-flickr"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="facebook.com/ccosingan"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/chrisdevworks"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/christopher-christian-cosingan"><i class="fa fa-linkedin"></i></a>
+
             </div>
 
             <div class="clear"></div>
@@ -617,7 +628,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    Copyright 2014 | All Rights Reserved  -- Template by <a href="http://webThemez.com">WebThemez.com</a>
+                    Copyright 2014 | All Rights Reserved -- Template by <a href="http://webThemez.com">WebThemez.com</a>
                 </div>
             </div>
             <!-- / .row -->
@@ -636,4 +647,5 @@
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
+
 </html>
