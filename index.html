@@ -1,662 +1,928 @@
-<!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
-    <title>ChrisDevWorks</title>
-    <meta name="description" content="">
-    <meta name="author" content="WebThemez">
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lte IE 8]>
-		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![endif]-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
-    <!-- Owl Carousel Assets -->
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Font Awesome -->
-    <!-- <link href="font/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-    <script src="https://kit.fontawesome.com/2d84fa80d6.js" crossorigin="anonymous"></script>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
-    <!-- AdminLTE -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack - personal portfolio</title>
 
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div id="logo-body">
-                        <a href="#" class="navbar-brand scroll-top logo"><b>ChrisDevWorks</b></a>
-                    </div>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#section-home" class="scroll-link">Home</a></li>
-                        <li><a href="#introText" class="scroll-link">About</a></li>
-                        <li><a href="#section-services" class="scroll-link">Services</a></li>
-                        <li><a href="#section-education" class="scroll-link">Education</a></li>
-                        <li><a href="#section-projects" class="scroll-link">Projects</a></li>
-                        <li><a href="#section-contact" class="scroll-link">Contact</a></li>
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
-        </div>
-        <!--/.container-->
-    </header>
-    <!--/.header-->
-    <div id="#top"></div>
-    <section id="section-home">
-        <div class="banner-container">
-            <img src="images/banner-bg2.jpg" alt="banner" />
-            <div class="container banner-content">
-                <div id="da-slider" class="da-slider">
-                    <div class="da-slide">
-                        <H2>Hi, I'm Christopher Christian Cosingan </H2>
-                        <p>A freelance developer from the City of Waterfalls</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>Front-end Developer</h2>
-                        <p>I develop website using Bootstrap front-end framework..</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>Back-end Developer</h2>
-                        <p>I can also develop the back-end using PHP/Laravel and MySQL/PostgreSQL</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>Other technologies</h2>
-                        <p>Including Internet of Things and Machine Vision</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <!--  <nav class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </nav> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="introText">
-        <div class="container">
-            <div class="heading text-center about-content">
-                <!-- Heading -->
-                <img class="profile-user-img img-fluid img-circle" src="images/profile.jpg" alt="User profile picture">
-                <h2>I'm Christopher Christian, a Full Stack developer</h2>
-                <p>From the city of Waterfalls, Iligan City</p>
-            </div>
-        </div>
-    </section>
-    <!-- <section class="hero">
-        <img src="images/mariacristinafalls.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero Image">
-        <div class="hero-text">
-            <h1>I am Christopher Christian, a Full Stack developer</h1>
-            <p>From the city of Waterfalls, Iligan City</p>
-        </div>
-    </section> -->
-    <!--About-->
-    <section id="section-about" class="secPad">
-        <div class="container">
-            <div class="text-center">
-                <h1>I create beautiful responsive website with documentations.</h1>
-                <p> I also Machine Vision projects using python and the Internet of Things (IoT) development using
-                    Arduino for Home Security and Automation and Robotics.</p>
-            </div>
-            <div class="row">
-                <!-- item -->
-                <div class="col-md-4 text-center tileBox card mb-2 bg-primary text-white">
-                    <img class="card-img-top border border-dark rounded" src="images/frontend-tech.webp" style="width: 100%; height: 370px; object-fit: fill;" alt="Dist Photo 1">
-                    <div class="txtHead card-img-overlay d-flex flex-column justify-content-end bg-primary card-body">
-                        <h4 class="card-title">Front-end Dev <i class="fa fa-desktop"></i></h4>
-                        <p class="card-text">With HTML, CSS, Javascript and Bootstrap</p>
-                    </div>
-                </div>
-                <!-- end: -->
+<body id="top" class="dark_theme">
 
-                <!-- item -->
-                <div class="col-md-4 text-center tileBox card mb-2 bg-primary text-white">
-                    <img class="card-img-top" src="images/backend-tech.webp" style="width: 100%; height: 370px; object-fit: cover;" alt="Dist Photo 1">
-                    <div class="txtHead card-img-overlay d-flex flex-column justify-content-end bg-primary card-body">
-                        <h4 class="card-title">Back-end Dev <i class="fa fa-database"></i></h4>
-                        <p class="card-text">With PHP, Python MySQL, and PostgreSQL.</p>
-                    </div>
-                </div>
-                <!-- end: -->
+  <!-- 
+    - #HEADER
+  -->
 
-                <!-- item -->
-                <div class="col-md-4 text-center tileBox card mb-2 bg-primary text-white">
-                    <img class="card-img-top" src="images/machinevision-bg.png" style="width: 100%; height: 370px; object-fit: cover;" alt="Dist Photo 1">
-                    <div class="txtHead card-img-overlay d-flex flex-column justify-content-end bg-primary card-body">
-                        <h4 class="card-title">Machine Vision and Robotics Dev <i class="fa fa-eye"></i></h4>
-                        <p class="card-text">With C++ and Python.</p>
-                    </div>
-                </div>
-              
-                <!-- end: -->
-            </div>
-        </div>
-    </section>
-    <!--Quote-->
-    <section id="quote" class="bg-parlex">
-        <div class="parlex-back">
-            <div class="container secPad text-center">
-                <h2>Good, Better, Best. Never let it rest. ‘Til your good is better and your better is best.</h2>
-                <h3>-St. Jerome</h3>
-            </div>
-            <!--/.container-->
-        </div>
-    </section>
+  <header class="header" data-header>
+    <div class="container">
 
-    <!--Skills-->
-    <section id="section-services" class="secPad white">
-        <div class="container">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>My Skills</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2>Web Programming <strong>Skills</strong></h2>
-                    <p class="mrgBtm20">
-                        It takes knowledge, smart work, and dedication to make great ideas come to life. I have been
-                        helping make great ideas happen for the past 7 years and am always ready for new challenges.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">HTML5</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">CSS/CC3</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">JavaScript</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 80%;">
-                                    <span class="sr-only">80% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">jQuery/Ajax</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">PHP</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">MySQL</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%;">
-                                    <span class="sr-only">90% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">PostgreSQL</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%;">
-                                    <span class="sr-only">50% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Python</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 70%;">
-                                    <span class="sr-only">70% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">C++</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 70%;">
-                                    <span class="sr-only">70% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h2>Other <strong>Skills</strong></h2>
-                    <p class="mrgBtm20">
-                        Problem solving is not always about sitting in a board room talking about the way things
-                        should be done. I have a strong background in UI design which allows me to think on my feet
-                        and act upon it.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Photoshop</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%;">
-                                    <span class="sr-only">60% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Arduino</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 80%;">
-                                    <span class="sr-only">80% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Computer Hardware Servicing</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 85%;">
-                                    <span class="sr-only">85% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Network Administration</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 70%;">
-                                    <span class="sr-only">70% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 skilltitle">Communication Skills</div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 70%;">
-                                    <span class="sr-only">70% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <h1 class="h1 logo">
+        <a href="#">Jack<span>.</span></a>
+      </h1>
 
-    <!--Experience-->
-    <section id="section-education" class="secPad">
-        <div class="container">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>Professional Experience</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-            </div>
-            <div id="timeline">
-                <div class="row timeline-movement timeline-movement-top">
-                    <div class="timeline-badge timeline-future-movement">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </a>
-                    </div>
-                    <div class="timeline-badge timeline-filter-movement">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </a>
-                    </div>
+      <div class="navbar-actions">
 
-                </div>
-                <div class="row timeline-movement">
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">Jan</span>
-                        <span class="timeline-balloon-date-month">2018</span>
-                    </div>
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Administrative Aide IV</span></li>
-                                        <li><span class="causale">Performed a wide variety of clerical tasks such as
-                                                word processing, printing, collating documents & scheduling
-                                                appointments.
-                                            </span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 1/06/2017 - 31/01/2018</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
+        <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
 
-                <div class="row timeline-movement">
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">May</span>
-                        <span class="timeline-balloon-date-month">2022</span>
-                    </div>
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Web Developer Intern</span></li>
-                                        <li><span class="causale">Developed a responsive web app for the Guidance Office
-                                                e that allows the staffs to manage exams. </span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 10/08/2021 - 10/05/2022</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Graduated</span></li>
-                                        <li><span class="causale">Bachelor of Science in Computer Science</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 22/05/2022</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
 
-            </div>
-        </div>
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
 
-    </section>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
 
 
-    <!--Portfolio-->
-    <section id="section-projects" class="page-section section appear clearfix secPad">
-        <div class="container">
-
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>Projects</h2>
-                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected
-                    humour.</p>
-            </div>
-
-            <div class="row">
-                <nav id="filter" class="col-md-12 text-center">
-                    <ul>
-                        <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesdev">Web Design and
-                                Development</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".macv">Machine Vision</a></li>
-                    </ul>
-                </nav>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
-
-                            <article class="col-sm-4 isotopeItem webdesdev">
-                                <div class="portfolio-item">
-                                    <img src="images/smcdms/Screenshot_59.png" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/smcdms/Screenshot_59.png" class="fancybox">
-                                                <h5>Login Page</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem webdesdev">
-                                <div class="portfolio-item">
-                                    <img src="images/smcdms/Screenshot_58.png" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/smcdms/Screenshot_58.png" class="fancybox">
-                                                <h5>Document Info with Paper Trails</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem webdesdev">
-                                <div class="portfolio-item">
-                                    <img src="images/smcdms/Screenshot_57.png" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/smcdms/Screenshot_57.png" class="fancybox">
-                                                <h5>A list of documents a user have released</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
 
 
-                            <!-- ============================MACHINE VISION====================================== -->
 
-                            <article class="col-sm-4 isotopeItem macv">
-                                <div class="portfolio-item">
-                                    <img src="images/machinevision/cv-img1.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/machinevision/cv-img1.jpg" class="fancybox">
-                                                <h5>Sample Taken in Bus Terminal</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+  <main>
+    <article class="container">
 
-                            <article class="col-sm-4 isotopeItem macv">
-                                <div class="portfolio-item">
-                                    <img src="images/machinevision/cv-img2.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/machinevision/cv-img2.jpg" class="fancybox">
-                                                <h5>Sample Taken in Bus Terminal</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+      <!-- 
+        - #HERO
+      -->
 
-                            <article class="col-sm-4 isotopeItem macv">
-                                <div class="portfolio-item">
-                                    <img src="images/machinevision/cv-img3.png" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/machinevision/cv-img3.png" class="fancybox">
-                                                <h5>Sample Taken in City Public Market</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+      <section class="hero" id="home">
 
+        <figure class="hero-banner">
 
-                        </div>
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+            <img src="./assets/images/hero-banner-sm.png" alt="A man in a blue shirt with a happy expression"
+              class="w-100">
+          </picture>
 
-                    </div>
+        </figure>
 
+        <div class="hero-content">
 
-                </div>
-            </div>
+          <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
+
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
 
         </div>
-    </section>
 
-    <!--Contact -->
-    <section id="section-contact" class="page-section secPad">
-        <div class="container">
+        <ul class="hero-social-list">
 
-            <div class="row">
-                <div class="heading text-center">
-                    <!-- Heading -->
-                    <h2>Let's Keep In Touch!</h2>
-                    <p>Thank you for visiting out my profile. If you would like to get into contact with me, please
-                        fill out the form below.</p>
-                </div>
-            </div>
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
 
-            <div class="row mrgn30">
-                <div class="text-center">
-                    <h4>Email:</h4>
-                    <address>
-                        ccosingan@gmail.com<br>
-                    </address>
-                    <h4>Address:</h4>
-                    <address>
-                        #161 Emilio Alcuizar Avenue, Bara-as, Brgy. Tubod<br>
-                        Iligan City, Lanao Del Norte<br>
-                        Philippines
-                        <br>
-                    </address>
-                    <h4>Phone:</h4>
-                    <address>
-                        (+63) 0955-1827-370<br>
-                    </address>
-                </div>
-            </div>
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                12+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                230+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text">
+            Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive
+            functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
+            curious about
+            learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
+            worked with
+            creative teams, which involves daily stand-ups and communications, source control, and project management.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary">Hire me</button>
+
+            <button class="btn btn-primary">Download cv</button>
+          </div>
+
         </div>
-        <!--/.container-->
-    </section>
-    <footer>
-        <div class="container">
-            <div class="social text-center">
-                <a href="facebook.com/ccosingan"><i class="fa fa-facebook"></i></a>
-                <a href="https://github.com/chrisdevworks"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/christopher-christian-cosingan"><i class="fa fa-linkedin"></i></a>
 
-            </div>
+      </section>
 
-            <div class="clear"></div>
-            <!--CLEAR FLOATS-->
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
         </div>
-    </footer>
-    <!--/.page-section-->
-    <section class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    Copyright 2014 | All Rights Reserved -- Template by <a href="http://webThemez.com">WebThemez.com</a>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
                 </div>
-            </div>
-            <!-- / .row -->
-        </div>
-    </section>
-    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+              </div>
+            </li>
 
-    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-    <script src="js/modernizr-latest.js"></script>
-    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script src="js/jquery.nav.js" type="text/javascript"></script>
-    <script src="js/jquery.cslider.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PugJs</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SASS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gulp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Webpack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ClickUp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Slack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe XD</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+              <p class="section-text">
+                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                elegant interface
+                helps any non-technical clients.
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-3.png" class="w-100"
+                  alt="A Cassette tape on a mellow apricot background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-4.png" class="w-100"
+                  alt="Blue digital watch on a dark liver background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-5.png" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-6.png" class="w-100"
+                  alt="On a yellow background, a digital watch and a glass.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-7.png" class="w-100"
+                  alt="A fujifilm instant camera on a dark electric blue background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <button class="load-more">Load more work</button>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
+
+                <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
+
+                <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Jack<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#">codewithsadee</a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
